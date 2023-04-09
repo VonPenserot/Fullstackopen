@@ -6,7 +6,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    server-->>browser: sending user input
+    server->>browser: render the user input in browser
     deactivate server
 
     Note: since event.preventDefault was used, the default behaviour of re-rendering 
