@@ -29,6 +29,6 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
     activate server
-    server->>browser: the favicon
+    server-->>browser: the favicon
     deactivate server
 ```
